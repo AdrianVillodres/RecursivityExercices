@@ -10,7 +10,13 @@
 
         public static int AddDigits(int n)
         {
-            return 0;
+            //down
+            if (n < 10) return n;
+            //down
+
+            //up
+
+            //up
         }
 
 
