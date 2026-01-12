@@ -4,17 +4,21 @@
     {
         public static void Main()
         {
-            Console.WriteLine(AddDigits(456));
+            Console.WriteLine(Swap());
         }
 
 
-        public static int AddDigits(int n)
+        public static int Swap(int n)
         {
-            if (n < 10) return n;
+            return SwapAux(n, 0);
+        }
 
-            return AddDigits(n % 10) + AddDigits(n / 10);
+
+        private static int SwapAux(int n, int result)
+        {
 
         }
+
 
 
     }
