@@ -4,55 +4,14 @@
     {
         public static void Main()
         {
-            Console.WriteLine("entro");
-            CountdownExplicado(5);
-            Console.WriteLine("salgo");
-
-            //CountdownClassic(5);
+            CountDigits(1234);
         }
 
 
-        public static void CountdownClassic(int n)
+        public static int CountDigits(int n)
         {
-            for(int i = n; i > 0; i--)
-            {
-                Console.WriteLine(i);
-            }
-
+            return 0;
         }
-
-
-        public static int CountdownExplicado(int n)
-        {
-            //bajada
-
-
-            //base case: n < 0
-            if (n < 0) return 0;
-
-            Console.WriteLine("bajda");
-
-
-            //bajada
-            int num = n - CountdownExplicado(n - 1);
-            //subida
-            Console.WriteLine(n);
-
-            //subida
-            return num;
-            
-        }
-
-        public static int Countdown(int n)
-        {
-            //base case: n < 0
-            if (n < 0) return 0;
-
-            return n - Countdown(n - 1); //caso recursivo
-
-        }
-
-
 
     }
 }
