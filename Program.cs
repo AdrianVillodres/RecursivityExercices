@@ -4,32 +4,29 @@
     {
         public static void Main()
         {
-            Console.WriteLine(Swap(1234));
+            int[] arrayInt = { 1, 2, 3, 4, 5 };
+
+            PrintForwardArray(arrayInt, 0);
+            Console.WriteLine();
+            PrintBackwardArray(arrayInt, 0);
         }
 
 
-        public static int Swap(int n)
+        public static void PrintForwardArray(int[] arrayInt, int index)
         {
-            return SwapAux(n, 0);
-        }
-
-
-        private static int SwapAux(int n, int result)
-        {
-            //down
-            if (n == 0)
+            if (index >= arrayInt.GetLength(0))
             {
-                return result;
+                return;
             }
-            int lastDigit = n % 10;
 
-            int substraction = n / 10;
-            //down
-            return SwapAux(substraction, result * 10 + lastDigit);
-            //up
-            //up
 
         }
+
+        public static void PrintBackwardArray(int[] arrayInt, int index)
+        {
+            // El teu codi aquí
+        }
+
 
 
 
