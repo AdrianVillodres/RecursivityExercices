@@ -4,7 +4,7 @@
     {
         public static void Main()
         {
-            Console.WriteLine(Swap());
+            Console.WriteLine(Swap(1234));
         }
 
 
@@ -16,6 +16,18 @@
 
         private static int SwapAux(int n, int result)
         {
+            //down
+            if (n == 0)
+            {
+                return result;
+            }
+            int lastDigit = n % 10;
+
+            int substraction = n / 10;
+            //down
+            return SwapAux(substraction, result * 10 + lastDigit);
+            //up
+            //up
 
         }
 
