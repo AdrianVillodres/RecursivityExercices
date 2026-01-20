@@ -5,7 +5,7 @@
         public static void Main()
         {
             Console.WriteLine("entro");
-            CountdownExplicado(5);
+            Console.WriteLine(Countdown(5));
             Console.WriteLine("salgo");
 
             //CountdownClassic(5);
@@ -46,9 +46,10 @@
         public static int Countdown(int n)
         {
             //base case: n < 0
-            if (n < 0) return 0;
+            if (n == 0) return 0;
 
-            return n - Countdown(n - 1); //caso recursivo
+            Console.WriteLine(n);
+            return Countdown(n - 1); //caso recursivo
 
         }
 
